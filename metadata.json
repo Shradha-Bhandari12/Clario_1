@@ -1,0 +1,8 @@
+{
+  "description": "Multilingual AI School Chatbot for Students and Admins with Voice and Text capabilities.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ],
+  "name": "Clario"
+}
