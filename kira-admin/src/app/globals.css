@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  /* Original Admin Panel Palette */
+  --bg-primary: #f6f7f9;
+  --bg-secondary: #edeef1;
+  --bg-card: #ffffff;
+  --bg-sidebar: #1b1f27;
+  --bg-sidebar-hover: #272c36;
+  --bg-sidebar-active: #2d333d;
+
+  --text-primary: #1a1d23;
+  --text-secondary: #5a6069;
+  --text-tertiary: #8b919a;
+  --text-inverse: #ffffff;
+
+  --accent: #4a7c6f;
+  --accent-foreground: #ffffff;
+  --accent-hover: #3d685c;
+  --accent-bg: rgba(74, 124, 111, 0.08);
+
+  --border: #e2e4e9;
+
+  --status-active: #2da44e;
+  --status-active-bg: #dafbe1;
+  --status-error: #cf222e;
+  --status-error-bg: #ffebe9;
+
+  --background: var(--bg-primary);
+  --foreground: var(--text-primary);
+}
+
+.dark {
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-card: #0d1117;
+  --bg-sidebar: #010409;
+  --bg-sidebar-hover: #161b22;
+  --bg-sidebar-active: #21262d;
+
+  --text-primary: #c9d1d9;
+  --text-secondary: #8b949e;
+  --text-tertiary: #6e7681;
+
+  --border: #30363d;
+
+  --background: var(--bg-primary);
+  --foreground: var(--text-primary);
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-sidebar: var(--bg-sidebar);
+  --color-sidebar-foreground: #a0a8b4;
+  --color-sidebar-active: var(--bg-sidebar-active);
+  --color-sidebar-active-foreground: #ffffff;
+
+  --color-border: var(--border);
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+}
